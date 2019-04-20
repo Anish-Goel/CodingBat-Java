@@ -1,0 +1,8 @@
+public String everyNth(String str, int n) {
+  String fin = "";
+  for(int end = 0; end < str.length(); end++){
+    if(end % n ==0)
+      fin += str.substring(end,end+1);
+  }
+  return fin;
+}
