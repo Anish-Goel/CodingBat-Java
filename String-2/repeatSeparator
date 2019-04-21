@@ -1,0 +1,9 @@
+public String repeatSeparator(String word, String sep, int count) {
+  String res = "";
+  if (count == 0) return "";
+  while (count > 1) {
+    res += word + sep;
+    count--;
+  }
+   return res + word;
+}
