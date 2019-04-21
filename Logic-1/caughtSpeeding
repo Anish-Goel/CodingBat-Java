@@ -1,0 +1,3 @@
+public int caughtSpeeding(int speed, boolean isBirthday) {
+  return speed > 65 && speed <= 85 && isBirthday? 1 : speed >= 86 && isBirthday? 2 : speed <= 65 && isBirthday? 0 : speed > 60 && speed <= 80? 1 : speed >= 81? 2 : 0;
+}
