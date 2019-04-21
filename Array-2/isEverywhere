@@ -1,0 +1,8 @@
+public boolean isEverywhere(int[] nums, int val) {
+  boolean f = true, g = true;
+  for (int i = 0; i < nums.length; i += 2)
+    if (nums[i] != val) f = false;
+  for (int i = 0; i < nums.length - 1; i += 2)
+    if (nums[i + 1] != val) g = false;
+  return f || g;
+}
