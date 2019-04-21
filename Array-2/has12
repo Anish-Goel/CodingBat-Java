@@ -1,0 +1,8 @@
+public boolean has12(int[] nums) {
+  boolean f = false, g = false;
+  for (int i = 0; i < nums.length; i++) {
+    if (nums[i] == 1) f = true;
+    else if (nums[i] == 2 && f) g = true;
+  }
+  return g;
+}
