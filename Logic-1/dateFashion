@@ -1,0 +1,3 @@
+public int dateFashion(int you, int date) {
+  return you < 3 || date < 3?  0 : you > 7 || date > 7? 2 : 1;
+}
