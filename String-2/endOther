@@ -1,0 +1,7 @@
+public boolean endOther(String a, String b) {
+  for(int i = 0; i < Math.min(a.length(),b.length()); i++) {
+    if((a.toLowerCase().equals(b.toLowerCase().substring(b.toLowerCase().length()-(i+1),b.toLowerCase().length()))) && (b.toLowerCase().equals(a.toLowerCase().substring(a.toLowerCase().length()-(i+1),a.toLowerCase().length()))))
+      return true;
+  }
+  return false;
+}
