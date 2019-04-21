@@ -1,0 +1,8 @@
+public String oneTwo(String str) {
+  if(str.length() < 3) return "";
+  String output = "";
+  for(int i = 0; i < str.length()-2; i+=3) {
+    output += "" + str.charAt(i+1) + str.charAt(i+2) + str.charAt(i);
+  }
+  return output;
+}
