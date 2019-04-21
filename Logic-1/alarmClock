@@ -1,0 +1,3 @@
+public String alarmClock(int day, boolean vacation) {
+  return (day == 0 || day == 6) && vacation? "off" : (day == 0|| day == 6) ^ vacation? "10:00" : "7:00";
+}
