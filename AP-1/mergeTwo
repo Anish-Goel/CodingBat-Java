@@ -1,0 +1,12 @@
+public String[] mergeTwo(String[] a, String[] b, int n) {
+  String[] result = new String[n];
+  int r = 0, ia = 0, ib = 0;
+  while (r < n)
+    if (a[ia].compareTo(b[ib]) < 0) result[r++] = a[ia++];
+    else if (a[ia].compareTo(b[ib]) > 0) result[r++] = b[ib++];
+    else {
+      result[r++] = a[ia++];
+      ib++;
+    }
+  return result;
+}
