@@ -1,0 +1,8 @@
+public boolean scoresIncreasing(int[] scores) {
+  int w  = Integer.MIN_VALUE;
+  for(int i : scores){
+    if(i < w) return false;
+    w = i;
+  }
+  return true;
+}
