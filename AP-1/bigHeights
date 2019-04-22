@@ -1,7 +1,7 @@
 public int bigHeights(int[] heights, int start, int end) {
   int c = 0;
   for (int i = start; i < end; i++) 
-    if (Math.abs(heights[i] - heights[i + 1]) >= 5)
+    if (Math.abs(heights[i] - heights[i + 1]) > 4)
       c++;
   return c;
 }
