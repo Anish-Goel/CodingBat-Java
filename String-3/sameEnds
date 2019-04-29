@@ -1,0 +1,8 @@
+public String sameEnds(String str) {
+  String r = "";
+  for (int i = 0; i <= str.length() / 2; i++)
+    for (int j = str.length() / 2; j < str.length(); j++)
+      if (str.substring(0, i).equals(str.substring(j)))
+        r = str.substring(0, i);
+  return r;
+}
