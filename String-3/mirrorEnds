@@ -1,0 +1,8 @@
+public String mirrorEnds(String str) {
+  String out = "";
+  for (int i = 0; i < str.length(); i++) {
+    if (str.charAt(i) != str.charAt(str.length()-(i+1))) break;
+    out += str.charAt(i);
+  }
+  return out;
+}
