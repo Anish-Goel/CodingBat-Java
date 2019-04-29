@@ -1,0 +1,9 @@
+public int[] squareUp(int n) {
+  int[] r = new int[n * n];
+  int p = 0;
+  for (int i = 1; i <= n; i++) {
+    for (int k = 1; k <= n - i; k++) r[p++] = 0;
+    for (int j = i; j > 0; j--) r[p++] = j;
+  }
+  return r;
+}
