@@ -1,0 +1,3 @@
+public int strCount(String str, String sub) {
+  return str.length() < sub.length()? 0 : str.startsWith(sub)? 1 + strCount(str.substring(sub.length()), sub) : strCount(str.substring(1), sub);
+}
