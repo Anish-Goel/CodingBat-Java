@@ -1,0 +1,3 @@
+public boolean groupSum6(int start, int[] nums, int target) {
+  return start >= nums.length && target == 0 || start < nums.length && groupSum6(start + 1, nums, target - nums[start]) || start < nums.length && nums[start] != 6 && groupSum6(start + 1, nums, target);
+}
