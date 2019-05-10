@@ -1,0 +1,7 @@
+public Map<String, String> firstChar(String[] strings) {
+  Map<String, String> out = new HashMap();
+  for (String s:strings)
+    if (out.containsKey(s.substring(0, 1))) out.put(s.substring(0, 1), out.get(s.substring(0, 1)) + s);
+    else out.put(s.substring(0, 1), s);
+  return out;
+}
