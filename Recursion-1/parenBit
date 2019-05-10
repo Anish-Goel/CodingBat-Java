@@ -1,0 +1,3 @@
+public String parenBit(String str) {
+  return str.startsWith("(") && str.endsWith(")")? str : str.startsWith("(")? parenBit(str.substring(0, str.length() - 1)) : parenBit(str.substring(1));
+}
