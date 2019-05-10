@@ -1,0 +1,3 @@
+public int countX(String str) {
+  return str.length() == 0? 0 : str.charAt(0) == 'x'? 1 + countX(str.substring(1)) : countX(str.substring(1));
+}
