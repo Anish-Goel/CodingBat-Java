@@ -1,0 +1,3 @@
+public int countAbc(String str) {
+  return str.length() < 3? 0 : str.startsWith("abc") || str.startsWith("aba")? 1 + countAbc(str.substring(2)) : 0 + countAbc(str.substring(1));
+}
