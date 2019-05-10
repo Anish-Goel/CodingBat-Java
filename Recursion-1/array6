@@ -1,0 +1,3 @@
+public boolean array6(int[] nums, int index) {
+  return nums.length == 0? false : index == nums.length - 1? nums[index] == 6: nums[index] == 6? true : array6(nums, index + 1);
+}
